@@ -20,6 +20,9 @@ return Application::configure(basePath: dirname(__DIR__))
             \App\Http\Middleware\HandleInertiaRequests::class,
         ]);
 
+        // Trust proxies for Railway deployment
+        $middleware->trustProxies(at: '*');
+
         // Sanctum middleware for API authentication
         $middleware->api(prepend: [
             \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
