@@ -5,6 +5,7 @@ export default {
     "./resources/**/*.js",
     "./resources/**/*.jsx",
   ],
+  darkMode: 'class', // Enable class-based dark mode
   theme: {
     extend: {},
   },
