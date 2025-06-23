@@ -8,19 +8,19 @@ export default function AppLayout({ title, children }) {
     return (
         <div>
             <Head title={title} />
-            <div className="min-h-screen bg-gray-100 dark:bg-gray-900 transition-colors duration-200">
-                <nav className="bg-white dark:bg-gray-800 shadow">
+            <div className="min-h-screen bg-gray-100 transition-colors duration-200">
+                <nav className="bg-white shadow">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="flex justify-between h-16">
                             <div className="flex items-center">
-                                <h1 className="text-xl font-semibold text-gray-900 dark:text-white m-0">
+                                <h1 className="text-xl font-semibold text-gray-900 m-0">
                                     Laravel + React + Inertia
                                 </h1>
                             </div>
                             <div className="flex items-center">
                                 <button
                                     onClick={() => setIsDark(!isDark)}
-                                    className="p-2 rounded-lg bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-200"
+                                    className="p-2 rounded-lg bg-gray-200 text-gray-800 hover:bg-gray-300 transition-colors duration-200"
                                     aria-label="Toggle dark mode"
                                 >
                                     {isDark ? (
